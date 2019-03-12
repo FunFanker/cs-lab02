@@ -1,0 +1,1351 @@
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2
+$ mkdir alice
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2
+$ mkdir bob
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2
+$ cd alice
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice
+$ mkdir project
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice
+$ cd project
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project
+$ cd..
+bash: cd..: command not found
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project
+$ cd ..
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice
+$ cd project
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project
+$ git init
+Initialized empty Git repository in C:/Users/u211-03/Desktop/lab2/alice/project/.git/
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git config user.name 'Alice (KozlyukDA)'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git config user.email 'alice@example.com'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        main.cpp
+        project.cbp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: caaioiaea i?ia?aiiu'
+[master (root-commit) baee565] code: caaioiaea i?ia?aiiu
+ 1 file changed, 9 insertions(+)
+ create mode 100644 main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add project.cbp
+warning: LF will be replaced by CRLF in project.cbp.
+The file will have its original line endings in your working directory
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'build: update CMake version'
+[master cbe04af] build: update CMake version
+ 1 file changed, 43 insertions(+)
+ create mode 100644 project.cbp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bin/
+        obj/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: caaioiaea i?ia?aiiu'
+[master 1b3ac36] code: caaioiaea i?ia?aiiu
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: caaioiaea i?ia?aiiu'
+On branch master
+Untracked files:
+        bin/
+        obj/
+
+nothing added to commit but untracked files present
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bin/
+        obj/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: caaioiaea i?ia?aiiu'
+[master e13f633] code: caaioiaea i?ia?aiiu
+ 1 file changed, 1 insertion(+)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -a -m 'code:caaioiaea i?ia?aiiu'
+[master e74be0b] code:caaioiaea i?ia?aiiu
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bin/
+        obj/
+        project.depend
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -a -m 'code:caaioiaea i?ia?aiiu'
+[master 83a7185] code:caaioiaea i?ia?aiiu
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: caaioiaea i?ia?aiiu'
+[master 049d858] code: caaioiaea i?ia?aiiu
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bin/
+        obj/
+        project.depend
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ ^C
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        obj/
+        project.depend
+        save.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add .gitignore
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'git'
+[master 16b0795] git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        obj/
+        project.depend
+        save.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$  git log --stat
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 049d85810da708382b75a99b6c461327a8131902
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:56 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 83a71850409416fcd412700c362c72d86a0a29be
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:36 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e74be0b0ac7102522014ab39d453fec6633066ca
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:45:27 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e13f633bb316c866c171e216bc9bc15e888982d1
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:44:37 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 1b3ac36aa2bd5481afb44cc4423f66a864fd86d8
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:41:47 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit cbe04af95198753f3d70586295b65a803add0039
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:38:35 2019 +0300
+
+    build: update CMake version
+
+ project.cbp | 43 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 43 insertions(+)
+
+commit baee565f963371866e04915505641c41edf24ab7
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:35:13 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+  $ git show  16b0795
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5e56e04
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++/bin
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --oneline
+16b0795 (HEAD -> master) git
+049d858 code: caaioiaea i?ia?aiiu
+83a7185 code:caaioiaea i?ia?aiiu
+e74be0b code:caaioiaea i?ia?aiiu
+e13f633 code: caaioiaea i?ia?aiiu
+1b3ac36 code: caaioiaea i?ia?aiiu
+cbe04af build: update CMake version
+baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --oneline --decorate
+16b0795 (HEAD -> master) git
+049d858 code: caaioiaea i?ia?aiiu
+83a7185 code:caaioiaea i?ia?aiiu
+e74be0b code:caaioiaea i?ia?aiiu
+e13f633 code: caaioiaea i?ia?aiiu
+1b3ac36 code: caaioiaea i?ia?aiiu
+cbe04af build: update CMake version
+baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --oneline --decorate --all --graph
+* 16b0795 (HEAD -> master) git
+* 049d858 code: caaioiaea i?ia?aiiu
+* 83a7185 code:caaioiaea i?ia?aiiu
+* e74be0b code:caaioiaea i?ia?aiiu
+* e13f633 code: caaioiaea i?ia?aiiu
+* 1b3ac36 code: caaioiaea i?ia?aiiu
+* cbe04af build: update CMake version
+* baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        obj/
+        project.depend
+        save.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --stat
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 049d85810da708382b75a99b6c461327a8131902
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:56 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 83a71850409416fcd412700c362c72d86a0a29be
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:36 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e74be0b0ac7102522014ab39d453fec6633066ca
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:45:27 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e13f633bb316c866c171e216bc9bc15e888982d1
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:44:37 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 1b3ac36aa2bd5481afb44cc4423f66a864fd86d8
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:41:47 2019 +0300
+Date:   Tue Mar 12 14:41:47 2019 +0300
+
+commit 83a71850409416fcd412700c362c72d86a0a29be
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 049d85810da708382b75a99b6c461327a8131902
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:56 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 83a71850409416fcd412700c362c72d86a0a29be
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:36 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log -- main.cpp
+commit 049d85810da708382b75a99b6c461327a8131902
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:56 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+commit 83a71850409416fcd412700c362c72d86a0a29be
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:36 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+commit e74be0b0ac7102522014ab39d453fec6633066ca
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:45:27 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+commit e13f633bb316c866c171e216bc9bc15e888982d1
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:44:37 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --grep "code:"
+commit 049d85810da708382b75a99b6c461327a8131902
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:56 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+commit 83a71850409416fcd412700c362c72d86a0a29be
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:46:36 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+commit e74be0b0ac7102522014ab39d453fec6633066ca
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:45:27 2019 +0300
+
+    code:caaioiaea i?ia?aiiu
+
+commit e13f633bb316c866c171e216bc9bc15e888982d1
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:44:37 2019 +0300
+
+    code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --grep "build"
+commit cbe04af95198753f3d70586295b65a803add0039
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:38:35 2019 +0300
+
+    build: update CMake version
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log project.cpb
+fatal: ambiguous argument 'project.cpb': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log -- project.cpb
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --project.cpb
+fatal: unrecognized argument: --project.cpb
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log -- project.cpb
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log -- project.cbp
+commit cbe04af95198753f3d70586295b65a803add0039
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:38:35 2019 +0300
+
+    build: update CMake version
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git show HEAD
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5e56e04
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++/bin
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git show master
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5e56e04
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++/bin
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git show  d2e8af
+fatal: ambiguous argument 'd2e8af': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git show  16b0795
+commit 16b07958b93c4ca4bfdba9a7bed52ff0958624d5 (HEAD -> master)
+Author: Alice (KozlyukDA) <alice@example.com>
+Date:   Tue Mar 12 14:55:57 2019 +0300
+
+    git
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..5e56e04
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++/bin
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git diff
+diff --git a/main.cpp b/main.cpp
+index 9206b0b..4e4639c 100644
+--- a/main.cpp
++++ b/main.cpp
+@@ -8,4 +8,5 @@ int main()
+ int a, b;
+ cin >> a >> b;
+ cout << "A - B = " << a - b << '\n';
++cout << "A * B = " << a * b << '\n';
+ }
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ ^C
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code'
+[master 106ad74] code
+ 1 file changed, 1 insertion(+)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git reset --hard HEAD~1
+HEAD is now at 16b0795 git
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git checkout HEAD --main.cpp
+error: unknown option `main.cpp'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git checkout HEAD -- main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code'
+[master f5d3c3c] code
+ 1 file changed, 2 insertions(+)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git remote add origin https://github.com/FunFanker/cs-lab02.git
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git push -u origin master
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (27/27), 3.16 KiB | 129.00 KiB/s, done.
+Total 27 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/FunFanker/cs-lab02.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ ^C
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ ^C
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git fetch
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/FunFanker/cs-lab02
+   f5d3c3c..b6bd9f8  master     -> origin/master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --oneline --decorate --all --graph
+* b6bd9f8 (origin/master) code
+* f5d3c3c (HEAD -> master) code
+* 16b0795 git
+* 049d858 code: caaioiaea i?ia?aiiu
+* 83a7185 code:caaioiaea i?ia?aiiu
+* e74be0b code:caaioiaea i?ia?aiiu
+* e13f633 code: caaioiaea i?ia?aiiu
+* 1b3ac36 code: caaioiaea i?ia?aiiu
+* cbe04af build: update CMake version
+* baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git pull --ff-only
+error: Your local changes to the following files would be overwritten by merge:
+        main.cpp
+Please commit your changes or stash them before you merge.
+Aborting
+Updating f5d3c3c..b6bd9f8
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code'
+[master 29521c4] code
+ 1 file changed, 1 insertion(+)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git push
+To https://github.com/FunFanker/cs-lab02.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/FunFanker/cs-lab02.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git push
+To https://github.com/FunFanker/cs-lab02.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/FunFanker/cs-lab02.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --graph --all --decorate --oneline
+* 29521c4 (HEAD -> master) code
+| * b6bd9f8 (origin/master) code
+|/
+* f5d3c3c code
+* 16b0795 git
+* 049d858 code: caaioiaea i?ia?aiiu
+* 83a7185 code:caaioiaea i?ia?aiiu
+* e74be0b code:caaioiaea i?ia?aiiu
+* e13f633 code: caaioiaea i?ia?aiiu
+* 1b3ac36 code: caaioiaea i?ia?aiiu
+* cbe04af build: update CMake version
+* baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git show b6bd9f8
+commit b6bd9f89d5264130e95879b99f223c684ebada29 (origin/master)
+Author: u211-03 <u211-03@public.mpei.local>
+Date:   Tue Mar 12 16:05:47 2019 +0300
+
+    code
+
+diff --git a/main.cpp b/main.cpp
+index 09d2628..353fd50 100644
+--- a/main.cpp
++++ b/main.cpp
+@@ -9,5 +9,5 @@ int a, b;
+ cin >> a >> b;
+ cout << "A - B = " << a - b << '\n';
+ cout << "A + B = " << a + b << '\n';
+-cout << "A * B = " << a * b << '\n';
++cout << "A * B = " << a*b << '\n';
+ }
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git reset --hard HEAD~1
+HEAD is now at f5d3c3c code
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git pull --ff-only
+Updating f5d3c3c..b6bd9f8
+Fast-forward
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: aiaaaeaiea aaeaiey e eaaeea eciaiaiey oiii?aiey'
+[master 9c9f7d6] code: aiaaaeaiea aaeaiey e eaaeea eciaiaiey oiii?aiey
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 439 bytes | 219.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/FunFanker/cs-lab02.git
+   b6bd9f8..9c9f7d6  master -> master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add main .cpp
+fatal: pathspec 'main' did not match any files
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git add main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git commit -m 'code: iaoi?aaiea iaeneioia'
+[master f1d1dd9] code: iaoi?aaiea iaeneioia
+ 1 file changed, 5 insertions(+)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 455 bytes | 227.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/FunFanker/cs-lab02.git
+   9c9f7d6..f1d1dd9  master -> master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --oneline
+f1d1dd9 (HEAD -> master, origin/master) code: iaoi?aaiea iaeneioia
+9c9f7d6 code: aiaaaeaiea aaeaiey e eaaeea eciaiaiey oiii?aiey
+b6bd9f8 code
+f5d3c3c code
+16b0795 git
+049d858 code: caaioiaea i?ia?aiiu
+83a7185 code:caaioiaea i?ia?aiiu
+e74be0b code:caaioiaea i?ia?aiiu
+e13f633 code: caaioiaea i?ia?aiiu
+1b3ac36 code: caaioiaea i?ia?aiiu
+cbe04af build: update CMake version
+baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git branch double
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git checkout double
+Switched to branch 'double'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (double)
+$ git add main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (double)
+$ git commit -m 'code: double'
+[double 7edaeac] code: double
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (double)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/FunFanker/cs-lab02
+   f1d1dd9..27e273a  master     -> origin/master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git pull --ff-only
+Updating f1d1dd9..27e273a
+Fast-forward
+ main.cpp | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --graph --all --decorate --oneline
+* 7edaeac (double) code: double
+| * 27e273a (HEAD -> master, origin/master) code: Iaoi?aaiea ieieioia
+|/
+* f1d1dd9 code: iaoi?aaiea iaeneioia
+* 9c9f7d6 code: aiaaaeaiea aaeaiey e eaaeea eciaiaiey oiii?aiey
+* b6bd9f8 code
+* f5d3c3c code
+* 16b0795 git
+* 049d858 code: caaioiaea i?ia?aiiu
+* 83a7185 code:caaioiaea i?ia?aiiu
+* e74be0b code:caaioiaea i?ia?aiiu
+* e13f633 code: caaioiaea i?ia?aiiu
+* 1b3ac36 code: caaioiaea i?ia?aiiu
+* cbe04af build: update CMake version
+* baee565 code: caaioiaea i?ia?aiiu
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git merge double
+Auto-merging main.cpp
+Merge made by the 'recursive' strategy.
+ main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/alice/project (master)
+$ git log --oneline --graph
+*   eb07f7f (HEAD -> master) Merge branch 'double' Eciaiaiea oeia ia?aiaiiuo a e b  ia double
+|\
+| * 7edaeac (double) code: double
+* | 27e273a (origin/master) code: Iaoi?aaiea ieieioia
+|/
+* f1d1dd9 code: iaoi?aaiea iaeneioia
+* 9c9f7d6 code: aiaaaeaiea aaeaiey e eaaeea eciaiaiey oiii?aiey
+* b6bd9f8 code
+* f5d3c3c code
+* 16b0795 git
+* 049d858 code: caaioiaea i?ia?aiiu
+* 83a7185 code:caaioiaea i?ia?aiiu
+* e74be0b code:caaioiaea i?ia?aiiu
+* e13f633 code: caaioiaea i?ia?aiiu
+* 1b3ac36 code: caaioiaea i?ia?aiiu
+* cbe04af build: update CMake version
+* baee565 code: caaioiaea i?ia?aiiu
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ git clone https://github.com/FunFanker/cs-lab02.git
+Cloning into 'cs-lab02'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 27 (delta 5), reused 27 (delta 5), pack-reused 0
+Unpacking objects: 100% (27/27), done.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ project
+bash: project: command not found
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ cd project
+bash: cd: project: No such file or directory
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ cd projectgit clone project
+bash: cd: too many arguments
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ git clone project
+fatal: repository 'project' does not exist
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ git clone https://github.com/FunFanker/cs-lab02.git
+fatal: destination path 'cs-lab02' already exists and is not an empty directory.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ https://github.com/FunFanker/cs-lab02.git
+bash: https://github.com/FunFanker/cs-lab02.git: No such file or directory
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ ^C
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$  git clone http://github.com/FunFanker/cs-lab02.git project
+Cloning into 'project'...
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 27 (delta 5), reused 27 (delta 5), pack-reused 0
+Unpacking objects: 100% (27/27), done.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ git init
+Initialized empty Git repository in C:/Users/u211-03/Desktop/lab2/bob/.git/
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git config user.name 'Bob (FunFanker)'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git config user.email 'bob@example.com'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git push https://github.com/FunFanker/cs-lab02.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/FunFanker/cs-lab02.git master
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git push alice
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream alice master
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ git remote -v
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob (master)
+$ rm -rf .git
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ ls
+project/
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob
+$ cd project/
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ ls
+main.cpp  project.cbp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git push
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+Everything up-to-date
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git commit -m
+error: switch `m' requires a value
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git commit -m 'code'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git commit -m 'code'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   main.cpp
+
+Untracked files:
+        obj/
+        project.layout
+
+no changes added to commit
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git commit -m 'code'
+[master b6bd9f8] code
+ Committer: u211-03 <u211-03@public.mpei.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git push
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 173.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To http://github.com/FunFanker/cs-lab02.git
+   f5d3c3c..b6bd9f8  master -> master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git config user.name 'Bob (FunFanker)'
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git fetch
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From http://github.com/FunFanker/cs-lab02
+   b6bd9f8..9c9f7d6  master     -> origin/master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git pull --ff-only
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+Updating b6bd9f8..9c9f7d6
+Fast-forward
+ main.cpp | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git add -u
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git commit -m 'code: Нахождение минимума'
+[master b32ca42] code: Нахождение минимума
+ Committer: Bob (FunFanker) <u211-03@public.mpei.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git push
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+To http://github.com/FunFanker/cs-lab02.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'http://github.com/FunFanker/cs-lab02.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git pull --ff-only
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From http://github.com/FunFanker/cs-lab02
+   9c9f7d6..f1d1dd9  master     -> origin/master
+fatal: Not possible to fast-forward, aborting.
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git fetch
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git log --oneline --decorate --all -graph
+fatal: unrecognized argument: -graph
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git log --oneline --decorate --all --graph
+* b32ca42 (HEAD -> master) code: Нахождение минимума
+| * f1d1dd9 (origin/master, origin/HEAD) code: нахождение максимума
+|/
+* 9c9f7d6 code: добавление деления и легкие изменения умножения
+* b6bd9f8 code
+* f5d3c3c code
+* 16b0795 git
+* 049d858 code: заготовка программы
+* 83a7185 code:заготовка программы
+* e74be0b code:заготовка программы
+* e13f633 code: заготовка программы
+* 1b3ac36 code: заготовка программы
+* cbe04af build: update CMake version
+* baee565 code: заготовка программы
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git rebase origin/master
+First, rewinding head to replay your work on top of it...
+Applying: code: Нахождение минимума
+Using index info to reconstruct a base tree...
+M       main.cpp
+Falling back to patching base and 3-way merge...
+Auto-merging main.cpp
+CONFLICT (content): Merge conflict in main.cpp
+error: Failed to merge in the changes.
+hint: Use 'git am --show-current-patch' to see the failed patch
+Patch failed at 0001 code: Нахождение минимума
+Resolve all conflicts manually, mark them as resolved with
+"git add/rm <conflicted_files>", then run "git rebase --continue".
+You can instead skip this commit: run "git rebase --skip".
+To abort and get back to the state before "git rebase", run "git rebase --abort".
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master|REBASE 1/1)
+$ git status
+rebase in progress; onto f1d1dd9
+You are currently rebasing branch 'master' on 'f1d1dd9'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   main.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        obj/
+        project.layout
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master|REBASE 1/1)
+$ git add main.cpp
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master|REBASE 1/1)
+$ git rebase --continue
+Applying: code: Нахождение минимума
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git commit -m 'code: Нахождение минимума с поправкой от Алисы'
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+        obj/
+        project.layout
+
+nothing added to commit but untracked files present
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ пше згыр
+bash: пше: command not found
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git push
+warning: redirecting to https://github.com/FunFanker/cs-lab02.git/
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 477 bytes | 238.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To http://github.com/FunFanker/cs-lab02.git
+   f1d1dd9..27e273a  master -> master
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$ git log --oneline
+27e273a (HEAD -> master, origin/master, origin/HEAD) code: Нахождение минимума
+f1d1dd9 code: нахождение максимума
+9c9f7d6 code: добавление деления и легкие изменения умножения
+b6bd9f8 code
+f5d3c3c code
+16b0795 git
+049d858 code: заготовка программы
+83a7185 code:заготовка программы
+e74be0b code:заготовка программы
+e13f633 code: заготовка программы
+1b3ac36 code: заготовка программы
+cbe04af build: update CMake version
+baee565 code: заготовка программы
+
+u211-03@PROG-08 MINGW32 ~/Desktop/lab2/bob/project (master)
+$
+
