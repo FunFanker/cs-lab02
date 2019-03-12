@@ -7,5 +7,5 @@ int main()
     cout << "Enter A and B: ";
 int a, b;
 cin >> a >> b;
-cout<< a+b;
+cout<< a-b;
 }
